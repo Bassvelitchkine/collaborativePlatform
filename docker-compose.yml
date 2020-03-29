@@ -1,0 +1,31 @@
+version: "3"
+services:
+  client:
+    build: ./client
+    container_name: "client"
+    restart: always
+    ports:
+      - "80:80"
+    links:
+      - "api"
+  api:
+    build: ./server
+    container_name: "api"
+    restart: always
+    ports:
+      - "5000:5000"
+    volumes:
+      - data:/app/server/data
+    links:
+      - "mongodb"
+  mongodb:
+    image: mongo:latest
+    container_name: "mongodb"
+    command: mongod --auth
+    volumes:
+      - database:/data/db
+    ports:
+      - 27017:27017
+volumes:
+  database:
+  data:

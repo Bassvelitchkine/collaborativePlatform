@@ -1,0 +1,68 @@
+.page.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    padding-top: 30vh;
+    height: 70vh;
+    font-size: 6em;
+    text-align: center;
+    background-color: rgb(248, 226, 229);
+    @media screen and (max-width: 600px) {
+      padding-top: 35vh;
+    }
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  h2 span {
+    font-size: 1;
+  }
+
+  img {
+    opacity: 0.75;
+    margin-right: 0.5em;
+    transition-duration: 0.3s;
+  }
+
+  img.tourne {
+    transform: rotate(90deg);
+  }
+
+  .explaination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    text-align: center;
+    width: 100%;
+  }
+
+  .explaination p {
+    margin-top: 3em;
+    width: 65%;
+  }
+
+  @media screen and (max-width: 736px) {
+    h1 {
+      font-size: 4em;
+    }
+
+    h2 {
+      font-size: 2em;
+    }
+
+    .explaination {
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 490px) {
+    .explaination {
+      text-align: center;
+    }
+  }
+}

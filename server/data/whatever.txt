@@ -1,0 +1,2 @@
+Ce fichier est là pour que git détecte le dossier "data" quand on push
+Ce dossier sera ensuite rempli par tout ce que l'admin du site pourra mettre dessus via l'interface admin

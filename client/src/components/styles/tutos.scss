@@ -1,0 +1,33 @@
+.tuto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    height: 20vh;
+    margin-top: 10vh;
+    @media screen and (max-width: 400px) {
+      text-align: center;
+    }
+  }
+  p {
+    width: 60%;
+    margin-bottom: 30px;
+    @media screen and (max-width: 600px) {
+      width: 80%;
+    }
+  }
+  #partages {
+    margin-top: 70px;
+    margin-bottom: 100px;
+    strong a {
+      text-decoration: none;
+    }
+  }
+}
+
+#inspiration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(235, 235, 235);
+}

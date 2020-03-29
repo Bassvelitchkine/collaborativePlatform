@@ -1,0 +1,25 @@
+.button-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+  margin: auto;
+  background-color: #f3eaf3;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    padding: 0;
+  }
+  button {
+    margin: 30px;
+    font-family: inherit;
+    font-size: 1em;
+    @media screen and (max-width: 800px) {
+      font-size: 0.8em;
+    }
+    @media screen and (max-width: 410px) {
+      font-size: 0.75em;
+    }
+  }
+}

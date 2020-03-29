@@ -1,0 +1,27 @@
+.catch-phrase {
+  margin-bottom: 100px;
+  button {
+    font-size: 1.2em;
+    background: url("../images/space.jpg");
+    background-size: cover;
+    font-family: inherit;
+    @media screen and (max-width: 650px) {
+      font-size: 1em;
+    }
+    @media screen and (max-width: 410px) {
+      font-size: 0.8em;
+    }
+
+    @media screen and (max-width: 345px) {
+      font-size: 0.6em;
+    }
+  }
+  button:hover {
+    opacity: 0.95;
+  }
+  @media screen and (max-width: 600px) {
+    #publication {
+      margin: 0;
+    }
+  }
+}

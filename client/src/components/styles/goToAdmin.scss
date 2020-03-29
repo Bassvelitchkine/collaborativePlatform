@@ -1,0 +1,17 @@
+.go-to-admin {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: #39454b;
+  padding-top: 10px;
+  a {
+    color: rgba(185, 186, 187, 0.5);
+    text-decoration: none;
+  }
+  a:hover {
+    color: #b9babb;
+  }
+  a:visited {
+    color: rgba(185, 186, 187, 0.5);
+  }
+}

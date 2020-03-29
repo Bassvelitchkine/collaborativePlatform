@@ -1,0 +1,25 @@
+.soundcloud-sharing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  div {
+    width: 100%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h4 {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    iframe {
+      width: 70%;
+    }
+    h4 {
+      text-align: center;
+    }
+  }
+}

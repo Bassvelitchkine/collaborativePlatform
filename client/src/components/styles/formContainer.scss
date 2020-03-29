@@ -1,0 +1,68 @@
+.container {
+  text-align: left;
+  display: block;
+  position: relative;
+  margin: 0px 0px 0px 0px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+  padding: 0.6em 0.7em;
+  background: none;
+  color: rgb(150, 150, 150);
+  border: solid 2px #e5e6e7;
+  border-radius: 0.5em;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  .line {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .half-field {
+    width: 49%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  /* We don't want to display the checkboxes */
+  .checkbox {
+    opacity: 0;
+  }
+
+  .container.checked {
+    border-color: rgb(179, 152, 192);
+    color: #ffffff;
+    background-color: rgb(179, 152, 192);
+  }
+  p {
+    text-align: center;
+    padding-top: 10px;
+  }
+  textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #checkboxes {
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 540px) {
+    #checkboxes {
+      flex-direction: column;
+      .half-field {
+        width: 100%;
+      }
+    }
+    p {
+      text-align: left;
+    }
+  }
+}

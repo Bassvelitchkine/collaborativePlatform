@@ -1,0 +1,144 @@
+$imageHeight: 40vh;
+$imageWidth: 40vh;
+$columnWidth: 500px;
+
+.image {
+  width: $imageWidth;
+  height: $imageHeight;
+
+  img {
+    box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 5px;
+    border-radius: 1em;
+  }
+  @media screen and (max-width: 800px) {
+    width: $imageWidth/1.5;
+    height: $imageHeight/1.5;
+  }
+  @media screen and (max-width: $columnWidth) {
+    width: $imageWidth;
+    height: $imageWidth;
+    margin-bottom: 10vh;
+  }
+}
+
+.preview {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media screen and (max-width: $columnWidth) {
+    height: 100vh;
+  }
+}
+
+.squares {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  @media screen and (max-width: $columnWidth) {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.preview.left {
+  background-color: #f0ebeb;
+  display: flex;
+  flex-direction: row;
+}
+
+.preview.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  .squares {
+    flex-direction: row-reverse;
+    @media screen and (max-width: $columnWidth) {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
+
+// La section d'informations
+.text.info {
+  width: 30%;
+  text-align: center;
+  @media screen and (max-width: 900px) {
+    width: 50%;
+  }
+  @media screen and (max-width: $columnWidth) {
+    width: 70%;
+  }
+  .details {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 0.6em;
+    p {
+      padding-left: 3px;
+      padding-right: 3px;
+      border: solid 1px rgba(15, 15, 15, 0.1);
+      border-radius: 5px;
+    }
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+      p {
+        width: 150px;
+        margin: auto;
+        margin-top: 3px;
+      }
+    }
+  }
+  .details.full {
+    @media screen and (max-width: 1150px) {
+      flex-direction: column;
+      p {
+        width: 150px;
+        margin: auto;
+        margin-top: 3px;
+      }
+    }
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  .description {
+    opacity: 0.85;
+  }
+}
+
+.script-preview {
+  // opacity: 0.5;
+  transition: 0.5s ease-out;
+  width: 10%;
+  height: 100%;
+  text-align: center;
+  button {
+    font-size: 2em;
+    // background-color: rgba(221, 155, 166, 0.7);
+    background: url("../images/space.jpg");
+    background-size: cover;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 1em;
+  }
+  :hover {
+    // background-color: rgb(29, 12, 29);
+    opacity: 0.9;
+  }
+
+  @media screen and (max-width: 850px) {
+    width: 30%;
+  }
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
